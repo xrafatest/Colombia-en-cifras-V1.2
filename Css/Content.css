@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Content{
+    display: flex;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+
+.IC1{
+    margin: 20px;
+    width: 50%;
+}
+
+.IC1 h2{
+    text-align: center;
+}
+
+.IC1-2{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.IC1-2 img{
+    width: 50%;
+    max-width: 300px;
+}
+
+.IC2{
+    margin: 20px;
+    width: 50%;
+}
+
+.IC2 h2{
+    text-align: center;
+}
+
+.IC2-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.IC2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+}

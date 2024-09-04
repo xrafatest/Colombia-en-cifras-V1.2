@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mi Aplicación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../../Media/fondoregister.jfif');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button.submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button.submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .login-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .login-link p {
+            margin: 0;
+        }
+
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Regístrate</h1>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+57" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad" required>
+                        <option value="" disabled selected>Selecciona tu ciudad</option>
+                        <optgroup label="Bogotá D.C.">
+                            <option value="Bogotá">Bogotá</option>
+                        </optgroup>
+                        <optgroup label="Antioquia">
+                            <option value="Medellín">Medellín</option>
+                            <option value="Envigado">Envigado</option>
+                            <option value="Itagüí">Itagüí</option>
+                            <option value="Sabaneta">Sabaneta</option>
+                        </optgroup>
+                        <optgroup label="Atlántico">
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Soledad">Soledad</option>
+                        </optgroup>
+                        <optgroup label="Bolívar">
+                            <option value="Cartagena">Cartagena</option>
+                        </optgroup>
+                        <optgroup label="Valle del Cauca">
+                            <option value="Cali">Cali</option>
+                            <option value="Buenaventura">Buenaventura</option>
+                            <option value="Palmira">Palmira</option>
+                        </optgroup>
+                        <optgroup label="Cundinamarca">
+                            <option value="Zipaquirá">Zipaquirá</option>
+                            <option value="Chía">Chía</option>
+                            <option value="Soacha">Soacha</option>
+                        </optgroup>
+                        <optgroup label="Santander">
+                            <option value="Bucaramanga">Bucaramanga</option>
+                            <option value="Floridablanca">Floridablanca</option>
+                        </optgroup>
+                        <optgroup label="Nariño">
+                            <option value="Pasto">Pasto</option>
+                        </optgroup>
+                        <optgroup label="Tolima">
+                            <option value="Ibagué">Ibagué</option>
+                        </optgroup>
+                        <optgroup label="Huila">
+                            <option value="Neiva">Neiva</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="departamento">Departamento</label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="" disabled selected>Selecciona tu departamento</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Guajira">Guajira</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </div>
+                <button type="submit" class="submit-btn">Regístrate</button>
+            </form>
+            <div class="login-link">
+                <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const apellido = document.getElementById('apellido').value.trim();
+            const telefono = document.getElementById('telefono').value.trim();
+            const ciudad = document.getElementById('ciudad').value;
+            const departamento = document.getElementById('departamento').value;
+            const email = document.getElementById('email').value.trim();
+            const contraseña = document.getElementById('contraseña').value.trim();
+
+            // Validaciones
+            const nombreRegex = /^[a-zA-Z\s]+$/;
+            const telefonoRegex = /^\+57\d{10}$/;
+
+            if (!nombreRegex.test(nombre)) {
+                Swal.fire('Error', 'El nombre solo debe contener letras.', 'error');
+                return;
+            }
+
+            if (!nombreRegex.test(apellido)) {
+                Swal.fire('Error', 'El apellido solo debe contener letras.', 'error');
+                return;
+            }
+
+            if (!telefonoRegex.test(telefono)) {
+                Swal.fire('Error', 'El teléfono debe comenzar con +57 y contener 10 dígitos.', 'error');
+                return;
+            }
+
+            // Crear el objeto del usuario
+            const usuario = {
+                nombre: nombre,
+                apellido: apellido,
+                telefono: telefono,
+                ciudad: ciudad,
+                departamento: departamento,
+                email: email,
+                contraseña: contraseña,
+                active: false
+            };
+
+            // Obtener los datos del localStorage
+            let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+            // Agregar el nuevo usuario al array
+            usuarios.push(usuario);
+
+            // Guardar el array actualizado en el localStorage
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+            // Mostrar alerta de éxito y redirigir
+            Swal.fire({
+                title: 'Registro Exitoso',
+                text: 'Tu cuenta ha sido creada con éxito.',
+                icon: 'success',
+                timer: 3000,
+                showConfirmButton: false
+            }).then(() => {
+                window.location.href = 'login.html'; // Redirigir a la página de login
+            });
+        });
+    </script>
+</body>
+</html>

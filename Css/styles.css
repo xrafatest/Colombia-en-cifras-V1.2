@@ -1,0 +1,321 @@
+:root {
+    --color-primary: #5FAD56;      
+    --color-secondary: #7EBC89;    
+    --color-accent: #C1DBB3;       
+    --color-background: #f0fff1;   
+    --color-text: #145c9e;         
+    --color-text-light: #60b2e5;   
+    --color-highlight: #C1DBB3;    
+}
+
+body {
+    font-family: 'Century Gothic', 'Century Gothic', Century Gothic, sans-serif;
+    background-color: #faf9f7;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #faf9f7;
+}
+    #encabezado {
+        background-color: blueviolet;
+    }
+
+.Titulo {
+    color: #185428;
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: #185428;
+}
+
+.bnm-2 {
+    display: flex;
+    justify-content: flex-end; /* alinea el menú a la derecha */
+    flex-grow: 1; /* hace que el menú use el espacio restante */
+}
+
+.bnm-2 ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;  
+}
+
+.bnm-2 ul li{
+    list-style: none;
+    min-width: 100px;
+    margin-left: 10px;
+    background-color: #185428;
+    
+}
+
+.bnm-2 ul li a{
+    padding: 10px;
+    display: block;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.bnm-2 ul li:hover{
+    background-color: var(--color-highlight);
+    color: #185428;
+    
+}
+
+.bnm-2 ul li > a:hover{
+    color: #185428;
+}
+
+.bnm-2 ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-highlight);
+}
+
+.navbar li ul {
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1000; /* Asegura que el submenú esté por encima del slider */
+}
+
+.navbar li ul li{
+    margin: 0;
+    position: relative;
+    text-align: left;
+}
+
+.navbar li:hover > ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li:hover > a{
+    color: #185428;
+}
+
+main {
+    background-color: #faf9f7;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+h1 {
+    font-family: 'Century Gothic', Century Gothic, monospace;
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+th {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+}
+
+.menu-toggle {
+    display: none; /* oculta el menú en más de 991px*/
+}
+
+/* para las pantallitas pequeñas */
+@media (max-width: 1121px) {
+
+    .bnm-2 {
+        display: none;     /* oculta el menú por defecto en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 95px; /* ajusta la distancia desde el encabezado  */
+        right: 0;
+        background-color: #185428;
+        width: 250px; /* compone el ancho del menú desplegable */
+        z-index: 1000; /*  hace ke el menú esté por encima del contenido */
+    }
+
+    /* muestra el menú cuando esté activo */
+    .bnm-2.active {
+        display: flex;
+    }
+
+    /* posición de el ícono del menú */
+    .menu-toggle {
+        display: block;
+        background-color: var(--color-primary);
+        color: var(--color-background);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute; 
+        right: 10px; /* ajusta el espacio de el borde derecho */
+        z-index: 1001; /*  que los botones estén por encima del menú */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* para que el menú esté a la derecha  */
+    }
+
+    .bnm-2 ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bnm-2 ul li {
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .bnm-2 ul li a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+        
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #185428;
+    color: var(--color-background);
+    padding: 2rem 0;
+    font-family: 'Century Gothic', 'Century Gothic', Century Gothic, sans-serif;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+
+.footer-table td {
+    vertical-align: top;
+    width: 33.33%; /* Divide el espacio equitativamente entre las tres columnas */
+}
+
+.footer-table h3 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-table ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-table a {
+    color: var(--color-background);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-table a:hover {
+    color: var(--color-highlight);
+}
+
+.footer-table p {
+    margin: 0.5rem 0;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-accent);
+    font-size: 0.9em;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px; /* Ajusta la altura del slider según tu necesidad */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* Si tienes 3 imágenes */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill; /* Asegura que la imagen ocupe el 100% del contenedor */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
