@@ -1,104 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="../../Css/styles.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .item img {
+            width: 50px;
+            height: 50px;
+        }
+        .item .description {
+            max-width: 600px;
+        }
+        .item h3 {
+            margin: 0 0 10px;
+        }
+        .item p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../Media/Green Cream Modern Financial Performance Dashboard Graph.png" alt="Inicio_Logo" height="80px" width="80px">
-                </a>
-                <p class="Titulo">Pulso Seguro Colombia</p>
-            </div>
-            <div class="bnm-2">
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../../Views/Sobre Nosotros/Sobre_Nosotros.html">Sobre Nosotros</a>
-                    <ul>
-                        <li><a href="../../Views/Sobre Nosotros/Quienes_Somos.html">Quienes Somos</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Mision_Vision.html">Mision Y Vision</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Nuestro_Equipo.html">Nuestro Equipo</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Nuestro_Procedimiento.html">Nuestro Procedimiento</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../../Views/Delitos/Delitos.html">Delitos</a>
-                    <ul>
-                        <li><a href="../../Views/Delitos/Tipos de delitos.html">Tipos de delitos</a></li>
-                        <li><a href="../../Views/Delitos/Estadisticas.html">Estadisticas</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../../Views/Periodos/Periodos.html">Periodos</a>
-                    <ul>
-                        <li><a href="../../Views/Periodos/2018 - 2022.html">2018 - 2022</a></li>
-                        <li><a href="../../Views/Periodos/2022 - 2026.html">2022 - 2026</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../../Views/Mapa_Interactivo.html">Mapa Interactivo</a></li>
-                    <li><a href="../../Views/Recursos.html">Recursos</a></li>
-                    <li><a href="../../Views/FAQ.html">FAQ</a></li>
-                    <li><a href="../../Views/Contactanos.html">Contactanos</a></li>
-                </ul>
-            </div>
-        </nav>
+        <custom-header></custom-header>
     </header>
-    
 <main>
-
-<!--Colocar lo del body aqui-->
-
+    <div class="container">
+        <div class="item">
+            <img src="path_to_image1.png" alt="Hurtar a personas">
+            <div class="description">
+                <h3>Hurto a personas</h3>
+                <p>Modalidad de hurto donde el victimario utiliza diferentes medios con el fin de apoderarse de los elementos de valor que lleva consigo una persona.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image2.png" alt="Hurto a residencias">
+            <div class="description">
+                <h3>Hurto a residencias</h3>
+                <p>El hurto a residencia se refiere al apoderamiento de cosas o bienes, que pertenecen a una o varias personas que se encuentran al interior de una casa, apartamento, finca, etc.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image3.png" alt="Hurto de automotores">
+            <div class="description">
+                <h3>Hurto de automotores</h3>
+                <p>Despojar a una persona de un automotor, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image4.png" alt="Hurto de motocicletas">
+            <div class="description">
+                <h3>Hurto de motocicletas</h3>
+                <p>Despojar a una persona de una motocicleta, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image5.png" alt="Hurtos a entidades comerciales">
+            <div class="description">
+                <h3>Hurtos a entidades comerciales</h3>
+                <p>Modalidad en la que el victimario utiliza diferentes medios con el fin de ingresar a un establecimiento comercial o industrial para apoderarse de los elementos de valor que posea el comercio o el producto de su actividad social.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image6.png" alt="Hurtos a entidades financieras">
+            <div class="description">
+                <h3>Hurtos a entidades financieras</h3>
+                <p>Todas aquellas acciones delincuenciales mediante las cuales, ejerciendo violencia sobre las personas o las cosas, ya sea penetrando o permaneciendo arbitrariamente, engañosa o clandestinamente violando o superando seguridades electrónicas de otro tipo, proceden a apoderarse del dinero de una entidad financiera.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <img src="path_to_image1.png" alt="Hurtar a personas">
+            <div class="description">
+                <h3>Hurto a personas</h3>
+                <p>Modalidad de hurto donde el victimario utiliza diferentes medios con el fin de apoderarse de los elementos de valor que lleva consigo una persona.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image2.png" alt="Hurto a residencias">
+            <div class="description">
+                <h3>Hurto a residencias</h3>
+                <p>El hurto a residencia se refiere al apoderamiento de cosas o bienes, que pertenecen a una o varias personas que se encuentran al interior de una casa, apartamento, finca, etc.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image3.png" alt="Hurto de automotores">
+            <div class="description">
+                <h3>Hurto de automotores</h3>
+                <p>Despojar a una persona de un automotor, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image4.png" alt="Hurto de motocicletas">
+            <div class="description">
+                <h3>Hurto de motocicletas</h3>
+                <p>Despojar a una persona de una motocicleta, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image5.png" alt="Hurtos a entidades comerciales">
+            <div class="description">
+                <h3>Hurtos a entidades comerciales</h3>
+                <p>Modalidad en la que el victimario utiliza diferentes medios con el fin de ingresar a un establecimiento comercial o industrial para apoderarse de los elementos de valor que posea el comercio o el producto de su actividad social.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image6.png" alt="Hurtos a entidades financieras">
+            <div class="description">
+                <h3>Hurtos a entidades financieras</h3>
+                <p>Todas aquellas acciones delincuenciales mediante las cuales, ejerciendo violencia sobre las personas o las cosas, ya sea penetrando o permaneciendo arbitrariamente, engañosa o clandestinamente violando o superando seguridades electrónicas de otro tipo, proceden a apoderarse del dinero de una entidad financiera.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <img src="path_to_image1.png" alt="Hurtar a personas">
+            <div class="description">
+                <h3>Hurto a personas</h3>
+                <p>Modalidad de hurto donde el victimario utiliza diferentes medios con el fin de apoderarse de los elementos de valor que lleva consigo una persona.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image2.png" alt="Hurto a residencias">
+            <div class="description">
+                <h3>Hurto a residencias</h3>
+                <p>El hurto a residencia se refiere al apoderamiento de cosas o bienes, que pertenecen a una o varias personas que se encuentran al interior de una casa, apartamento, finca, etc.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image3.png" alt="Hurto de automotores">
+            <div class="description">
+                <h3>Hurto de automotores</h3>
+                <p>Despojar a una persona de un automotor, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image4.png" alt="Hurto de motocicletas">
+            <div class="description">
+                <h3>Hurto de motocicletas</h3>
+                <p>Despojar a una persona de una motocicleta, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image5.png" alt="Hurtos a entidades comerciales">
+            <div class="description">
+                <h3>Hurtos a entidades comerciales</h3>
+                <p>Modalidad en la que el victimario utiliza diferentes medios con el fin de ingresar a un establecimiento comercial o industrial para apoderarse de los elementos de valor que posea el comercio o el producto de su actividad social.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image6.png" alt="Hurtos a entidades financieras">
+            <div class="description">
+                <h3>Hurtos a entidades financieras</h3>
+                <p>Todas aquellas acciones delincuenciales mediante las cuales, ejerciendo violencia sobre las personas o las cosas, ya sea penetrando o permaneciendo arbitrariamente, engañosa o clandestinamente violando o superando seguridades electrónicas de otro tipo, proceden a apoderarse del dinero de una entidad financiera.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <img src="path_to_image1.png" alt="Hurtar a personas">
+            <div class="description">
+                <h3>Hurto a personas</h3>
+                <p>Modalidad de hurto donde el victimario utiliza diferentes medios con el fin de apoderarse de los elementos de valor que lleva consigo una persona.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image2.png" alt="Hurto a residencias">
+            <div class="description">
+                <h3>Hurto a residencias</h3>
+                <p>El hurto a residencia se refiere al apoderamiento de cosas o bienes, que pertenecen a una o varias personas que se encuentran al interior de una casa, apartamento, finca, etc.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image3.png" alt="Hurto de automotores">
+            <div class="description">
+                <h3>Hurto de automotores</h3>
+                <p>Despojar a una persona de un automotor, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image4.png" alt="Hurto de motocicletas">
+            <div class="description">
+                <h3>Hurto de motocicletas</h3>
+                <p>Despojar a una persona de una motocicleta, mediante diferentes tipos de modalidades.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image5.png" alt="Hurtos a entidades comerciales">
+            <div class="description">
+                <h3>Hurtos a entidades comerciales</h3>
+                <p>Modalidad en la que el victimario utiliza diferentes medios con el fin de ingresar a un establecimiento comercial o industrial para apoderarse de los elementos de valor que posea el comercio o el producto de su actividad social.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="path_to_image6.png" alt="Hurtos a entidades financieras">
+            <div class="description">
+                <h3>Hurtos a entidades financieras</h3>
+                <p>Todas aquellas acciones delincuenciales mediante las cuales, ejerciendo violencia sobre las personas o las cosas, ya sea penetrando o permaneciendo arbitrariamente, engañosa o clandestinamente violando o superando seguridades electrónicas de otro tipo, proceden a apoderarse del dinero de una entidad financiera.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer>
-    <div class="footer-content">
-        <table class="footer-table">
-            <tr>
-                <td>
-                    <h3>Navegación</h3>
-                    <ul>
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Quienes_Somos.html">Quiénes Somos</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Mision.html">Misión</a></li>
-                        <li><a href="../../Views/Sobre Nosotros/Vision.html">Visión</a></li>
-                        <li><a href="../../Views/Comparativa.html">Comparativa</a></li>
-                        <li><a href="../../Views/Mapa_Interactivo.html">Mapa Interactivo</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h3>Periodos</h3>
-                    <ul>
-                        <li><a href="../../Views/Periodos/2018 - 2022.html">2018-2022</a></li>
-                        <li><a href="../../Views/Periodos/2022 - 2026.html">2022-2024</a></li>
-                    </ul>
-                    <h3>Análisis</h3>
-                    <ul>
-                        <li><a href="../../Views/Delitos.html">Por Delito</a></li>
-                        <li><a href="../../Views/Recursos.html">Recursos</a></li>
-                        <li><a href="../../Views/FAQ.html">FAQ</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h3>Contacto</h3>
-                    <p>Email: info@pulsoseguro.co</p>
-                    <p>Teléfono: (57) 1234567890</p>
-                    <a href="../../Views/Contactanos.html">Formulario de Contacto</a>
-                  
-                </td>
-            </tr>
-        </table>
-    </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2024 PulsoSeguro Colombia. Todos los derechos reservados.</p>
-    </div>
-    <div class="sena-logo">
-            <img src="../../Media/logoSena.png" alt="Logo SENA" width="50" height="50">
-    </div>
-</footer>
+    <footer>
+        <custom-footer></custom-footer>
+    </footer>
 
+    <script src="/js/model.js"></script>
 </body>
 </html>
