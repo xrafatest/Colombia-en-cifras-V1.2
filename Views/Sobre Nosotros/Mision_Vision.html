@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Mision y vision</title>
     <link rel="stylesheet" href="../../Css/styles.css">
     <style>
         body {
@@ -15,9 +15,9 @@
             margin: 0 auto;
             padding: 20px;
         }
+
         .section {
             background-color: rgb(218, 218, 218);
-            border-radius: 10px;
             margin-bottom: 20px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,21 +34,19 @@
             margin-right: 20px;
         }
         .foto img {
-            max-width: 80px;
-        }
-
-        .section.vision {
-            flex-direction: row-reverse; /* invierte el orden de los elementos */
-        }
-        .section.vision .foto {
-            margin-right: 0;
-            margin-left: 20px; /* agrega espacio entre el texto y el ícono */
+            max-width: 200px;
         }
 
         .text {
             text-align: justify;
             color: #555;
         }
+
+        .text-1 {
+            text-align: justify;
+            color: #555;
+        }
+
     </style>
 </head>
 <body>
@@ -69,16 +67,16 @@
             </div>
             <div class="section vision">
                 <div class="foto">
-                    <img src="vision.png" alt="foto visión">
+                    <img src="/Media/Carros.png" alt="foto visión">
                 </div>
-                <div class="text">
+                <div class="text-1">
                     <h2>VISIÓN</h2>
                     <p>Desarrollar una plataforma web que muestre de manera clara y accesible las estadísticas delictivas en Colombia, comparando los delitos de impacto entre el periodo presidencial 2018-2022 y el actual para ofrecer una visión detallada y actualizada del panorama de seguridad en el país.</p>
                 </div>
             </div>
             <div class="section">
                 <div class="foto">
-                    <img src="objetivos.png" alt="foto objetivos">
+                    <img src="/Media/Carros.png" alt="foto objetivos">
                 </div>
                 <div class="text">
                     <h2>OBJETIVOS</h2>
@@ -91,6 +89,7 @@
 <footer>
     <custom-footer></custom-footer>
 </footer>
+<script src="/js/menu.js"></script>
 <script src="/js/model.js"></script>
 </body>
 </html>

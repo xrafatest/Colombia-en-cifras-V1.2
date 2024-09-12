@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Mi Aplicación</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="/Css/styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('../../Media/fondoregister.jfif');
-            display: flex;
+            background-image: #ffffff;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -17,7 +17,6 @@
 
         .container {
             width: 100%;
-            max-width: 400px;
         }
 
         .form-container {
@@ -25,6 +24,8 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 200px 40% 200px 40%;
+            height: 450px;
         }
 
         h1 {
@@ -95,6 +96,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <custom-header></custom-header>
+    </header>
     <div class="container">
         <div class="form-container">
             <h1>Inicia Sesión</h1>
@@ -115,6 +119,9 @@
         </div>
     </div>
 
+    <footer>
+        <custom-footer></custom-footer>
+    </footer>
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script>
@@ -158,5 +165,6 @@
             });
         });
     </script>
+    <script src="/js/model.js"></script>
 </body>
 </html>

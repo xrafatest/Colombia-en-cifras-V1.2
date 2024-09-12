@@ -6,8 +6,12 @@
 .Content{
     display: flex;
     margin-top: 20px;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
 }
 
 .IC1{
@@ -19,6 +23,10 @@
     text-align: center;
 }
 
+.IC1 a{
+    color: black;
+}
+
 .IC1-2{
     align-items: center;
     text-align: center;
@@ -28,6 +36,7 @@
 .IC1-2 img{
     width: 50%;
     max-width: 300px;
+
 }
 
 .IC2{
@@ -50,4 +59,15 @@
     flex-direction: column;
     gap: 5px;
     width: 40%;
+    margin-top: 20px;
+}
+
+.IC2-2 img{
+    height: 150px;
+    width: 200px;
+}
+
+.IC2 a{
+    color: black;
+    align-items: center;
 }
