@@ -64,7 +64,6 @@ class CustomHeader extends HTMLElement {
                 </ul>
             </div>
         </nav>
-<<<<<<< HEAD
         `;
     }
 }
@@ -128,8 +127,6 @@ class CustomContent extends HTMLElement {
                 <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Violencia Intrafamiliar</a>
             </div>
         </div>
-=======
->>>>>>> f0f6886290ce7c662983de1ab7c1e48505b90741
         `;
     }
 }
