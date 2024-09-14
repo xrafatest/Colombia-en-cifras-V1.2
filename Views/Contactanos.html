@@ -21,31 +21,48 @@
                     <input type="text" id="nombres" name="nombres" placeholder="Nombres*" required>
                     <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos*" required>
                     <input type="email" id="email" name="email" placeholder="E-mail*" required>
-                    <input type="text" id="subject" name="numero telefonico" placeholder="Telefono" required>
+                    <input type="text" id="telefono" name="numero telefonico" placeholder="Telefono" required>
                     <textarea id="message" name="message" placeholder="Tu mensaje aquí..." rows="4" required></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer>
         <custom-footer></custom-footer>
     </footer>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const telefonoRegex = /^\+57\d{10}$/;
+
+
             // Obtener los valores de los campos
             var nombres = document.getElementById('nombres').value;
             var apellidos = document.getElementById('apellidos').value;
-    
-             // Expresión regular para detectar números
-            var regex = /\d/;
-    
-            // Validar si los campos contienen números
-            if (regex.test(nombres) || regex.test(apellidos)) {
-                alert("Los campos de Nombres y Apellidos no deben contener números.");
-                event.preventDefault(); // Evitar que el formulario se envíe
+            var email = document.getElementById('email').value;
+            var telefono = document.getElementById('telefono').value;
+            var mensaje = document.getElementById('message').value;
+
+            if(!telefonoRegex.test(telefono)) {
+                Swal.fire('Error', 'El teléfono debe comenzar con +57 y contener 10 dígitos.', 'error');
+                return;
+            }
+            if(!nombres || !apellidos || !email || !telefono || !mensaje) {
+                Swal.fire('Error', 'Debes llenar todos los campos.', 'error');
+                return;
+            }else {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Gracias por contactarnos, nuestro equipo se pondra en contacto contigo",
+                    showConfirmButton: false,
+                    timer: 5000
+                  });
             }
         });
     </script>
