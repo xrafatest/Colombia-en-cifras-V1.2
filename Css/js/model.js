@@ -5,14 +5,9 @@ class CustomHeader extends HTMLElement {
             <div class="logo">
                 <div class="logo">
                     <a href="/index.html">
-<<<<<<< HEAD
-                        <img src="/Media/logo.png" alt="Inicio_Logo" height="80px" width="500px">
-                    </a>
-=======
                         <img src="/Media/logo.png" alt="Inicio_Logo" height="80px" width="80px">
                     </a>
                     <p class="Titulo">Pulso Seguro Colombia</p>
->>>>>>> f0f6886290ce7c662983de1ab7c1e48505b90741
                 </div>
                 <input type="search" name="searh" class="searh" placeholder="Buscar">
             </div>
@@ -70,72 +65,6 @@ class CustomHeader extends HTMLElement {
                 </ul>
             </div>
         </nav>
-<<<<<<< HEAD
-        `;
-    }
-}
-
-class CustomContent extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <div class="content-2">
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Abigeato</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Amenazas</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Delitos Sexuales</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Extorcion</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Homicidio en Accidentes</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Homicidio</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto a automotores</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto a entidades comerciales</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto a entidades financieras</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto motocicletas</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto a personas</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Hurto a residencias</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Lesiones Accidentales</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Lesiones Personales</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Pirateria terrestre</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Secuestro</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Terrorismo</a>
-            </div>
-            <div>
-                <a href=""><img src="/Media/iloveimg-converted/t (28).jpg" alt="">Violencia Intrafamiliar</a>
-            </div>
-        </div>
-=======
->>>>>>> f0f6886290ce7c662983de1ab7c1e48505b90741
         `;
     }
 }
@@ -154,7 +83,6 @@ class CustomFooter extends HTMLElement {
                         <li><a href="/Views/Sobre Nosotros/Mision_Vision.html">Misión Y Vision</a></li>
                         <li><a href="/Views/Periodos/Periodos.html">Periodos</a></li>
                         <li><a href="/Views/Mapa_Interactivo.html">Mapa Interactivo</a></li>
-                        <li><a href="/Views/Politica de Tratamiento de datos personales.html">Tratamiento de Datos</a></li>
                     </ul>
                 </td>
                 <td>
@@ -193,4 +121,3 @@ class CustomFooter extends HTMLElement {
 
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
-customElements.define('custom-content', CustomContent);
