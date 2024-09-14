@@ -5,14 +5,8 @@ class CustomHeader extends HTMLElement {
             <div class="logo">
                 <div class="logo">
                     <a href="/index.html">
-<<<<<<< HEAD
                         <img src="/Media/logo.png" alt="Inicio_Logo" height="80px" width="500px">
                     </a>
-=======
-                        <img src="/Media/logo.png" alt="Inicio_Logo" height="80px" width="80px">
-                    </a>
-                    <p class="Titulo">Pulso Seguro Colombia</p>
->>>>>>> f0f6886290ce7c662983de1ab7c1e48505b90741
                 </div>
                 <input type="search" name="searh" class="searh" placeholder="Buscar">
             </div>
