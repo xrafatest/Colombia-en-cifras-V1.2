@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.Titulo-content{
+    padding-top: 40px;
+}
+
+.Titulo-content p{
+    text-align: center;
+    color: rgb(32, 56, 100);
+    font-size: 60px;
+    font-stretch:normal;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.content{
+    margin-top: 40px;
+    display: flex;
+}
+
+.caja{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.caja h2{
+    text-align: left;
+    font-size: 40px;
+}
+
+.caja p{
+    font-size: 25px;
+}
+
+.caja ol li{
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+.caja ul li{
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+.content-1{
+    margin-left: 243px;
+}
+
+.content-2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 2500px;
+}
+
+.content-2 div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 100px;
+
+}
+
+.content-2 div a img{
+    height: 50px;
+    width: 80px;
+}

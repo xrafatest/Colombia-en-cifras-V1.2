@@ -3,37 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="/Media/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/Css/styles.css">
     <link rel="stylesheet" href="/Css/Content.css">
+    
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+
+    main {
+    background-color: #ffff;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+    
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 1500px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        display: flex;
+        width: 100%;
+        flex-shrink: 0;
+        height: 400px;
+    }
+    
+    .text-content {
+        flex: 1.5;
+        background-color: rgb(32, 56, 100);
+        color: white;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .image-content {
+        flex: 1;
+        background-color: #ddd;
+        background-size: auto;
+    }
+    
+    .image-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-left: 2px solid white;
+        background-size: cover;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+        color: white;
+        font-size: 18px;
+        border-radius: 50%;
+        user-select: none;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    
+    </style>
 </head>
 <body>
     <header>
         <custom-header></custom-header>
     </header>
-
 <main>
     <div class="slider">
         <div class="slides">
-            <div class="slide"><img src="./Media/Abigeato/foto_robo_de_ganado.jpg" alt="Imagen 1" height="500px"></div>
-            <div class="slide"><img src="./Media/Extorcion/seguimiento_-_2024-01-20t145933.642.jpg" alt="Imagen 2"></div>
-            <div class="slide"><img src="./Media/Amenazas/amenazas.jpg" alt="Imagen 3"></div>
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="text-content">
+                    <h2>Prueba 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed officiis 
+                        magni quod adipisci ipsum cupiditate nesciunt laborum, enim ut eligendi 
+                        accusantium, aperiam cumque quas quibusdam eum distinctio incidunt, sunt fugit.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/Media/Foto-Inicio.jpg" alt="Imagen 1">
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="text-content">
+                    <h2>Texto del Slider 2</h2>
+                    <p>Este es el contenido del segundo slide. Personaliza este texto para tu uso.</p>
+                </div>
+                <div class="image-content">
+                    <img src="" alt="Imagen 2">
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="text-content">
+                    <h2>Texto del Slider 3</h2>
+                    <p>Este es el contenido del tercer slide. Continúa agregando información aquí.</p>
+                </div>
+                <div class="image-content">
+                    <img src="" alt="Imagen 3">
+                </div>
+            </div>
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+    
+        <!-- Controles de navegación -->
+        <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlides(1)">&#10095;</a>
     </div>
 
     <div class="Content">
         <div class="IC1">
-            <h2>Noticias de Interes</h2>
+            <h2>Delitos</h2>
             <div class="IC1-1">
                 <div class="IC1-2">
-                    <img src="./Media/Carros.png" alt="">
-                    <p>Delitos Vehiculares</p>
+                    <a href="/Views/Delitos/Tipos/Hurto Automotores.html"><img src="/Media/Hurto Automotores/W735DHGISFHZDAF6NDAABDEK3Q.jpg" alt=""></a>
+                    <p><a href="/Views/Delitos/Tipos/Hurto Automotores.html">Hurto de automotores</a></p>
                 </div>
                 <div class="IC1-2">
-                    <img src="./Media/rata.png" alt="">
-                    <p>Hurto a mano Armada</p>
+                    <a href="/Views/Delitos/Tipos/Hurto Personas.html"><img src="/Media/Hurto Personas/Hurto a personas.jpeg.jpeg" alt=""></a>
+                    <p><a href="/Views/Delitos/Tipos/Hurto Personas.html">Hurto a Personas</a></p>
                 </div>
             </div>
         </div>
@@ -41,20 +161,20 @@
             <h2>TOP 4 Indicadores</h2>
             <div class="IC2-1">
                 <div class="IC2-2">
-                    <img src="/Media/Captura de pantalla 2024-08-29 195342.png" alt="">
-                    <p>1. Robo motorizados</p>
+                    <a href="/Views/Delitos/Tipos/Hurto Motocicletas.html"><img src="/Media/Hurto Motocicletas/20210421-Hurto-Motos-Bogota-01.jpeg" alt=""></a>
+                    <p><a href="/Views/Delitos/Tipos/Hurto Motocicletas.html">1. Hurto De Motocicletas</a></p>
                 </div>
                 <div class="IC2-2">
-                    <img src="/Media/Captura de pantalla 2024-08-29 195342.png" alt="">
-                    <p>2. Porte ilegal Armas</p>
+                    <a href="/Views/Delitos/Tipos/Violencia Intrafamiliar.html"><img src="/Media/Violencia Intrafamiliar/XSC4PCURAZBQFLO4CPPOEF7L2I.jpg" alt=""></a>
+                   <p><a href="/Views/Delitos/Tipos/Violencia Intrafamiliar.html">2. Violencia Intrafamiliar</a></p>
                 </div>
                 <div class="IC2-2">
-                    <img src="/Media/Captura de pantalla 2024-08-29 195342.png" alt="">
-                    <p>3. Asesinatos</p>
+                    <a href="/Views/Delitos/Tipos/Homicidio.html"><img src="/Media/Homicidio/PORTADAS-Dana-11.jpg" alt=""></a>
+                    <p><a href="/Views/Delitos/Tipos/Homicidio.html">3. Homicidios</a></p>
                 </div>
                 <div class="IC2-2">
-                    <img src="/Media/Captura de pantalla 2024-08-29 195342.png" alt="">
-                    <p>4. Extorsion</p>
+                    <a href="/Views/Delitos/Tipos/Extorcion.html"><img src="/Media/Extorcion/42114750_42114750_20230409174653.jpg" alt=""></a>
+                   <p><a href="/Views/Delitos/Tipos/Extorcion.html">4. Extorsión</a></p>
                 </div>
             </div>
         </div>
